@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo"><span>HAITAM</span>.PORTFOLIO</a>
+
+            <nav class="navber">
+                <ul class="sidebar">
+                    <li class="hamburger close"  onclick="toggleSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICE</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+
+                <div onclick="toggleSidebar()" class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </div>
+            </nav>
+            <script>
+                function toggleSidebar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    if (sidebar.classList.contains("show")) {
+                        sidebar.classList.remove("show");
+                    } else {
+                       sidebar.classList.add("show")
+                    }
+                }
+            </script>
+        </div>
+    </header>
+    <main class="container">
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>I m Haitam Elbaqqal</h1>
+                <h3>Software Engineer based In Tangier</h3>
+                <div class="btn-box"><a href="#">Contact Me</a> </div>
+        </section>
+        <section class="about" id="about">
+            <h2 class="heading">about <span>Me</span></h2>
+
+            <div class="about-img">
+                <img src="images/aboutme1.jpg" alt="">
+                <span class="circle-spin"></span>
+            </div>
+
+            <div class="about-content">
+
+                <h3>Frontend Developer!</h3>
+                <p>A first-year computer engineering student at the Suptem School (Higher School of Technical Sciences
+                    and Technology), ambitious and I want to become a developer in the future.</p>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="heading">My <span>Services</span></h2>
+
+            <div class="service-box">
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>We create responsive and user-friendly websites tailored to your needs.</p>
+                </div>
+                <div class="service">
+                    <h3>Mobile App Development</h3>
+                    <p>We develop native and cross-platform mobile applications.</p>
+                </div>
+                <div class="service">
+                    <h3>UI/UX Design</h3>
+                    <p>We design intuitive and aesthetically pleasing user interfaces.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Portfolio</h2>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <h3>Project 1</h3>
+                    <p>First projectin html hello world website</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Project 2</h3>
+                    <p>First Portfolio</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Project 3</h3>
+                    <p>My Portfolio</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="heading">Skills</h2>
+
+            <div class="skills-list">
+                <div class="skill">
+                    <h3>HTML/CSS 60%</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>C 60%</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python 55%</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
+
+</main>
+</body>
+
+</html>
